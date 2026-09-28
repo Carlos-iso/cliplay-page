@@ -1,0 +1,87 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  padding-block: 72px 56px;
+  align-items: start;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.h1 {
+  font-family: var(--mono);
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  text-wrap: balance;
+  margin-bottom: 24px;
+}
+
+.dim { color: var(--text-2); }
+
+.desc {
+  font-size: 16px;
+  color: var(--text-2);
+  line-height: 1.7;
+  max-width: 38ch;
+  margin-bottom: 36px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  font-family: var(--mono);
+  font-size: 13px;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 10px 22px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: opacity 0.15s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btnPrimary:hover {
+  opacity: 0.88;
+  text-decoration: none;
+}
+
+.btnGhost {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-2);
+  border: 1px solid var(--border);
+  padding: 10px 22px;
+  transition: border-color 0.15s, color 0.15s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btnGhost:hover {
+  border-color: var(--text-2);
+  color: var(--text);
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-block: 48px 40px;
+  }
+}

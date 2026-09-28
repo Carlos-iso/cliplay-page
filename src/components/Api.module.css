@@ -1,0 +1,112 @@
+.section {
+  padding-block: 64px;
+  border-top: 1px solid var(--border);
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 32px;
+}
+
+.h2 {
+  font-family: var(--mono);
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-bottom: 16px;
+  text-wrap: balance;
+}
+
+.sub {
+  color: var(--text-2);
+  max-width: 52ch;
+  margin-bottom: 48px;
+  line-height: 1.7;
+}
+
+.block {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: 13px;
+  overflow-x: auto;
+  margin-bottom: 32px;
+}
+
+.blockHeader {
+  background: var(--bg-3);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 18px;
+  font-size: 11px;
+  color: var(--text-3);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pre {
+  padding: 20px 18px;
+  line-height: 1.8;
+  color: var(--text-2);
+}
+
+.pre :global(.kw)  { color: var(--accent); }
+.pre :global(.str) { color: var(--green); }
+.pre :global(.cmt) { color: var(--text-3); }
+
+.copyBtn {
+  font-family: var(--mono);
+  font-size: 11px;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-3);
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.copyBtn:hover {
+  border-color: var(--accent-lo);
+  color: var(--accent);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--mono);
+  font-size: 13px;
+  border: 1px solid var(--border);
+}
+
+.table th {
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 16px;
+  font-weight: 400;
+  background: var(--bg-2);
+}
+
+.table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.table tr:last-child td { border-bottom: none; }
+
+.field { color: var(--accent); white-space: nowrap; }
+.type  { color: var(--text-3); white-space: nowrap; }
+.req   { color: var(--green);  font-size: 10px; letter-spacing: 0.06em; white-space: nowrap; }
+.opt   { color: var(--text-3); font-size: 10px; letter-spacing: 0.06em; white-space: nowrap; }
+.desc  { color: var(--text-2); font-family: var(--sans); font-size: 13px; line-height: 1.6; }

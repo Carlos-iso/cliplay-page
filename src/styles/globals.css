@@ -1,0 +1,57 @@
+:root {
+  --bg:        #0B1017;
+  --bg-2:      #121C27;
+  --bg-3:      #1A2738;
+  --border:    #1E2F42;
+  --text:      #C8D4E0;
+  --text-2:    #5E738A;
+  --text-3:    #3A5068;
+  --accent:    #E49B1A;
+  --accent-lo: #A06A0F;
+  --green:     #3DB888;
+  --red:       #D05060;
+  --mono:      'IBM Plex Mono', monospace;
+  --sans:      'IBM Plex Sans', system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+a, button, [role="button"] { cursor: pointer; }
+input, textarea, [contenteditable] { cursor: text; }
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+}
+
+pre {
+  font-family: var(--mono);
+}
